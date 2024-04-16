@@ -1,6 +1,5 @@
-title: Sub page
+title: Trang Con
 
-# Sub Page 1
+# Trang Con 1
 
-This page is simply here to demonstrate multiple levels of navigation in the
-theme.
+Trang này đơn giản chỉ để mô phỏng nhiều cấp độ điều hướng trong chủ đề.

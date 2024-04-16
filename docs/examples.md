@@ -1,13 +1,12 @@
-title: Examples
+title: Ví dụ
 
-# Theme Examples
+# Các Ví dụ về Chủ Đề
 
-This page is full of examples so you can see how this theme renders different
-aspects of the documentation.
+Trang này chứa nhiều ví dụ để bạn có thể thấy cách chủ đề này render các khía cạnh khác nhau của tài liệu.
 
-## Code highlighting
+## Đánh dấu mã
 
-Here is a Python code block.
+Dưới đây là một đoạn mã Python.
 
 ```python
 a,b = 0,1
@@ -16,6 +15,7 @@ def fib():
     while True:
         a,b = b, a+b
         yield a
+
 ```
 
 This is an example of inline code: `f = fib()` and `f.next()`.

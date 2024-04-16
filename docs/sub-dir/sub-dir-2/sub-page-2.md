@@ -1,4 +1,3 @@
-# Sub Page 2
+ # Trang Con 2
 
-This page is simply here to demonstrate multiple levels of navigation in the
-theme.
+Trang này đơn giản chỉ để minh họa nhiều cấp độ của thanh điều hướng trong chủ đề.
