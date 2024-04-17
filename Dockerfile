@@ -1,16 +1,19 @@
-FROM python:3.6.9-alpine
+# Sử dụng hình ảnh Python chính thức làm cơ sở
+FROM python:3.9-slim
 
-MAINTAINER https://github.com/PengBAI
+# Cài đặt các phụ thuộc hệ thống cần thiết
+RUN apt-get update && apt-get install -y \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN apk --no-cache add lftp ca-certificates openssh && \
-    pip install mkdocs mkdocs-material mkdocs-bootswatch
+# Cài đặt MkDocs và các phụ thuộc khác
+RUN pip install mkdocs mkdocs-material mkdocs-bootswatch
 
-RUN mkdir /workspace
-WORKDIR /workspace
+# Đặt thư mục làm việc
+WORKDIR /docs
 
-COPY mkdocs.yml ./mkdocs.yml
-COPY docs ./docss
-
+# Expose cổng MkDocs mặc định
 EXPOSE 8000
 
+# Lệnh để phục vụ tài liệu
 CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]

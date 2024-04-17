@@ -1,9 +1,9 @@
-version: '3'
+version: '3.8'
 
 services:
   mkdocs:
-    image: pengbai/docker-mkdocs
+    build: .
     ports:
       - "8000:8000"
     volumes:
-      - /C:\Users\kiets\OneDrive\Tài liệu\GitHub\docker-mkdocs\mkdocs.yml
+      - ./docs:/docs
